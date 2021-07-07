@@ -1,0 +1,29 @@
+<%= form_for @tienda do |f| %>
+  <div>
+    <%= f.label :id_tienda %>
+    <%= f.number_field :id_tienda %>
+  </div>
+  <div>
+    <%= f.label :nombre_tienda %>
+    <%= f.text_area :nombre_tienda %>
+  </div>
+  <div>
+    <%= f.label :descripcion_tienda %>
+    <%= f.text_field :descripcion_tienda %>
+  </div>
+  <div>
+    <%= f.label :ciudad %>
+    <%= f.text_area :ciudad %>
+  </div>
+  <div>
+    <%= f.label :pais %>
+    <%= f.text_area :pais %>
+  </div>
+  <div>
+    <%= f.label :nombre_producto %>
+    <%= f.number_area :nombre_producto %>
+  </div>
+  <div>
+    <%= f.submit %>
+  </div>
+<% end %>

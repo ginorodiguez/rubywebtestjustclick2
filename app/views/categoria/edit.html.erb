@@ -1,0 +1,15 @@
+<%= form_for @categoria do |f| %>
+  <div>
+    <%= f.label :id_categoria %>
+    <%= f.number_field :id_categoria %>
+  </div>
+  <div>
+    <%= f.label :nombre_categoria %>
+    <%= f.text_area :nombre_categoria %>
+  </div>
+  <div>
+    <%= f.label :nombre_producto %>
+    <%= f.text_area :nombre_producto %>
+  </div>
+
+<% end %>

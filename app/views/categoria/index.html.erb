@@ -1,0 +1,23 @@
+<h1>Categoria</h1>
+<%= link_to "Crear Categorias", categoria_new_path %>
+<table>
+  <tr>
+    <thead>
+      <th>Id</th>
+      <th>Categoria</th>
+      <th>Producto</th>
+    </thead>
+  </tr>
+    <% @categorias.each do |categoria| %>
+  <tr>
+    <td><%= categoria.id_categoria %></td>
+    <td><%= categoria.nombre_categoria %></td>
+    <td><%= categoria.nombre_producto %></td>
+
+    <td>
+      <%= link_to "Editar", edit_categoria_path(categoria) %>
+      <%= link_to "Eliminar", categoria, method: :delete, data: { confirm: "Deseas eliminar la categoria?"} %>
+    </td>
+  </tr>
+    <% end %>
+</table>

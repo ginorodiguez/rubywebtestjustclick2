@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_tienda: 1
+  nombre_tienda: MyString
+  descripcion: MyString
+  ciudad: MyString
+  pais: MyString
+  id_producto: 1
+
+two:
+  id_tienda: 1
+  nombre_tienda: MyString
+  descripcion: MyString
+  ciudad: MyString
+  pais: MyString
+  id_producto: 1

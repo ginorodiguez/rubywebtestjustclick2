@@ -1,0 +1,29 @@
+<h1>Tiendas</h1>
+<%= link_to "Crear Tiendas", tienda_new_path %>
+<table>
+  <tr>
+    <thead>
+      <th>Id</th>
+      <th>Nombre</th>
+      <th>Descripción</th>
+      <th>Ciudad</th>
+      <th>Pais</th>
+      <th>Producto</th>
+    </thead>
+  </tr>
+    <% @tiendas.each do |tienda| %>
+  <tr>
+    <td><%= tienda.id_tienda %></td>
+    <td><%= tienda.nombre_tienda %></td>
+    <td><%= tienda.descripcion %></td>
+    <td><%= tienda.ciudad %></td>
+    <td><%= tienda.pais %></td>
+    <td><%= tienda.nombre_producto %></td>
+
+    <td>
+      <%= link_to "Editar", edit_tienda_path(tienda) %>
+      <%= link_to "Eliminar", tienda, method: :delete, data: { confirm: "Deseas eliminar la informacion de la tabla tiendas?"} %>
+    </td>
+  </tr>
+    <% end %>
+</table>
